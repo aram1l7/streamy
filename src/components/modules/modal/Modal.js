@@ -14,7 +14,7 @@ const Modal = ({ onDismiss, content, headerText, actions }) => {
         className="ui standard modal visible active"
       >
         <div
-          className="header"
+          className="header" 
           style={{
             display: "flex",
             justifyContent: "space-between",
