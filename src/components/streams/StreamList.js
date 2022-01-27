@@ -3,7 +3,6 @@ import { getStreamList } from "../../store/operations";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 class StreamList extends Component {
-
   componentDidMount() {
     this.props.getStreams();
   }
@@ -34,7 +33,7 @@ class StreamList extends Component {
                 )}
                 <i className="large middle aligned icon camera"></i>
                 <div className="content">
-                  {el.title}
+                  <Link to={`/streams/${el.id}`}>{el.title}</Link>
                   <div className="description">{el.description}</div>
                 </div>
               </div>
