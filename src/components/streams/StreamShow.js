@@ -15,6 +15,7 @@ function StreamShow() {
   useEffect(() => {
     dispatch(getStream(id));
     showPlayer();
+    console.log("hello world");
 
     return () => {
       flvPlayer.destroy();
